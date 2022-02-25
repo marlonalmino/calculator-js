@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Calculator</title>
 </head>
 
 <body>
 
-  <div id="root">
+  <div>
     <table>
       <tr>
         <td colspan="3"><input type="text" id="displayValue" readonly></td>
@@ -48,21 +49,7 @@
   </div>
 
 
-  <script language="JavaScript">
-    function display(value) {
-      document.querySelector('#displayValue').value += value
-    }
-
-    function operation() {
-      let x = document.querySelector('#displayValue').value
-      let result = eval(x)
-      document.querySelector('#displayValue').value = result
-    }
-
-    function clr() {
-      document.querySelector('#displayValue').value = ''
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
