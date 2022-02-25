@@ -12,7 +12,11 @@
 
   <div id="root">
     <table>
-      <div id="display"><input type="text" id="displayValue" readonly></div>
+      <tr>
+        <td colspan="3"><input type="text" id="displayValue" readonly></td>
+        <td><button>c</button></td>
+
+      </tr>
       <tr>
         <td><button value="7" onclick="display('7')">7</button></td>
         <td><button value="8" onclick="display('8')">8</button></td>
@@ -38,7 +42,7 @@
         <td><button value="0" onclick="display('0')">0</button></td>
         <td><button value="." onclick="display('.')">.</button></td>
         <td><button value="/" onclick="display('/')">/</button></td>
-        <td><button value="=">=</button></td>
+        <td><button value="=" onclick="operation()">=</button></td>
       </tr>
     </table>
   </div>
@@ -47,6 +51,12 @@
   <script language="JavaScript">
     function display(value) {
       document.querySelector('#displayValue').value += value
+    }
+
+    function operation() {
+      let x = document.querySelector('#displayValue').value
+      let result = eval(x)
+      document.querySelector('#displayValue').value = result
     }
   </script>
 </body>
