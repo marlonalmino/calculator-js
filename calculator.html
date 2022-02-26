@@ -11,39 +11,39 @@
 
 <body>
 
-  <div>
+  <div id="root">
     <table>
       <tr>
         <td colspan="3"><input type="text" id="displayValue" readonly></td>
-        <td><button onclick="clr()">c</button></td>
+        <td><button onclick="clr()" class="red-btn">c</button></td>
 
       </tr>
       <tr>
         <td><button value="7" onclick="display('7')">7</button></td>
         <td><button value="8" onclick="display('8')">8</button></td>
         <td><button value="9" onclick="display('9')">9</button></td>
-        <td><button value="+" onclick="display('+')">+</button></td>
+        <td><button value="+" onclick="display('+')" class="green-btn">+</button></td>
       </tr>
 
       <tr>
         <td><button value="4" onclick="display('4')">4</button></td>
         <td><button value="5" onclick="display('5')">5</button></td>
         <td><button value="6" onclick="display('6')">6</button></td>
-        <td><button value="-" onclick="display('-')">-</button></td>
+        <td><button value="-" onclick="display('-')" class="green-btn">-</button></td>
       </tr>
 
       <tr>
         <td><button value="1" onclick="display('1')">1</button></td>
         <td><button value="2" onclick="display('2')">2</button></td>
         <td><button value="3" onclick="display('3')">3</button></td>
-        <td><button value="*" onclick="display('*')">*</button></td>
+        <td><button value="*" onclick="display('*')" class="green-btn">*</button></td>
       </tr>
 
       <tr>
         <td><button value="0" onclick="display('0')">0</button></td>
         <td><button value="." onclick="display('.')">.</button></td>
-        <td><button value="/" onclick="display('/')">/</button></td>
-        <td><button value="=" onclick="operation()">=</button></td>
+        <td><button value="/" onclick="display('/')" class="green-btn">/</button></td>
+        <td><button value="=" onclick="operation()" class="equal-btn">=</button></td>
       </tr>
     </table>
   </div>
